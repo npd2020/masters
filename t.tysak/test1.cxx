@@ -12,8 +12,8 @@ int main(){
   m += 1;
   n_res = double(n_res)/10.;
        }
-       
+
        cout << m << "\n";
   return 0;
 
-} // main
+}

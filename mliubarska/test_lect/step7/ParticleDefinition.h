@@ -3,13 +3,14 @@
 #include <vector>
 
 template <typename T>
-class ParticleDefinition
+class ParticleDefinition 
 {
 protected:
 	std::string m_name;
 	T m_mass;
 	std::vector<T> m_P;
 	T m_E;
+	void setMass(T const& mass) { m_mass = mass; }
 
 public:
 	size_t const NUM_COMPONENT = 3;
@@ -31,6 +32,7 @@ public:
 	inline T const& getEnergy() { return m_E; }
 	std::string const& getName(){ return m_name; }
 	T const& getMass() { return m_mass; }
-	void setMass(T const& mass) { m_mass = mass; }
+	//	T getMass() { return m_mass; }
+	//	void setMass(T const& mass) { m_mass = mass; }
 	void setName(std::string const& name) { m_name = name; }
 };

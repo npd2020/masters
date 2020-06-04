@@ -29,7 +29,7 @@ else{
     length = distance(zp+A, yp);
   }
   else if(yp == B){
-    length = distance(xp+B, zp);
+    length = distance(xp, zp+B);
   }
   else{
     cout << "bad input" << endl;
